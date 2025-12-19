@@ -16,12 +16,12 @@ use Exception;
 class PublishInfo {
 	public const NO_ERRORS = 'ok';
 
-	private bool $success;
-	private string $publish_id;
-	private string $upload_url;
-	private string $error_code;
-	private string $error_message;
-	private string $log_id;
+	private $success;
+	private $publish_id;
+	private $upload_url;
+	private $error_code;
+	private $error_message;
+	private $log_id;
 
 	public function __construct(bool $success, string $publish_id, string $upload_url, string $error_code, string $error_message = '', string $log_id = '') {
 		$this->success = $success;

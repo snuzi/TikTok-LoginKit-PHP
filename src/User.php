@@ -12,20 +12,20 @@
 namespace gimucco\TikTokLoginKit;
 
 class User {
-	private string $open_id;
-	private string $union_id;
-	private string $avatar;
-	private string $avatar_thumb;
-	private string $avatar_larger;
-	private string $display_name;
-	private string $bio;
-	private string $url;
-	private bool $is_verified;
-	private int $followers;
-	private int $following;
-	private int $likes;
-	private int $num_videos;
-	private string $handle;
+	private $open_id;
+	private $union_id;
+	private $avatar;
+	private $avatar_thumb;
+	private $avatar_larger;
+	private $display_name;
+	private $bio;
+	private $url;
+	private $is_verified;
+	private $followers;
+	private $following;
+	private $likes;
+	private $num_videos;
+	private $handle;
 
 	/**
 	 * Main constructor

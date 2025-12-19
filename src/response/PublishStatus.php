@@ -21,12 +21,12 @@ class PublishStatus {
 	public const PUBLISH_COMPLETE = 'PUBLISH_COMPLETE';
 	public const FAILED = 'FAILED';
 
-	private bool $success;
-	private string $status;
-	private string $error_code;
-	private string $error_message;
-	private string $log_id;
-	private string $public_post_id;
+	private $success;
+	private $status;
+	private $error_code;
+	private $error_message;
+	private $log_id;
+	private $public_post_id;
 
 	//string(150) "{"data":{"downloaded_bytes":10062683,"status":"PROCESSING_DOWNLOAD"},"error":{"code":"ok","message":"","log_id":"202312280857597AA19C5FBDD4513C2E9A"}}"
 	// string(119) "{"data":{"status":"PUBLISH_COMPLETE"},"error":{"code":"ok","message":"","log_id":"202312280858037AA19C5FBDD4513C3038"}}"

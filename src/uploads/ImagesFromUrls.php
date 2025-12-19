@@ -16,13 +16,13 @@ use gimucco\TikTokLoginKit\Connector;
 use gimucco\TikTokLoginKit\response\PublishInfo;
 
 class ImagesFromUrls {
-	private array $urls;
-	private string $title;
-	private string $privacy_level;
-	private bool $comments_off;
-	private bool $auto_add_music;
-	private bool $is_brand_content;
-	private bool $is_brand_organic;
+	private $urls;
+	private $title;
+	private $privacy_level;
+	private $comments_off;
+	private $auto_add_music;
+	private $is_brand_content;
+	private $is_brand_organic;
 	public function __construct(array $urls, string $title, string $privacy_level = Connector::PRIVACY_PRIVATE, bool $comments_off = false, bool $auto_add_music = false, bool $is_brand_content = false, bool $is_brand_organic = false) {
 		if (!Connector::isValidPrivacyLevel($privacy_level)) {
 			throw new Exception('TikTok Invalid Privacy Level Provided: '.$privacy_level.". Must be: ".implode(', ', Connector::VALID_PRIVACY));

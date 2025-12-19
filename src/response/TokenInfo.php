@@ -14,13 +14,13 @@ namespace gimucco\TikTokLoginKit\response;
 use Exception;
 
 class TokenInfo {
-	private string $access_token;
-	private string $refresh_token;
-	private int $expires_in;
-	private string $open_id;
-	private int $refresh_expires_in;
-	private array $scope;
-	private string $token_type;
+	private $access_token;
+	private $refresh_token;
+	private $expires_in;
+	private $open_id;
+	private $refresh_expires_in;
+	private $scope;
+	private $token_type;
 
 	public function __construct(string $access_token, string $refresh_token, int $expires_in, string $open_id, int $refresh_expires_in, array $scope, string $token_type) {
 		$this->access_token = $access_token;

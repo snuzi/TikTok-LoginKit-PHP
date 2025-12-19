@@ -16,18 +16,18 @@ use gimucco\TikTokLoginKit\Connector;
 use gimucco\TikTokLoginKit\response\PublishInfo;
 
 class VideoFromFile {
-	private string $file;
-	private string $title;
-	private string $privacy_level;
-	private bool $comments_off;
-	private bool $duet_off;
-	private bool $stitch_off;
-	private int $video_cover_timestamp_ms;
-	private int $bytes;
-	private string $mime;
-	private string $upload_url;
-	private bool $is_brand_content;
-	private bool $is_brand_organic;
+	private $file;
+	private $title;
+	private $privacy_level;
+	private $comments_off;
+	private $duet_off;
+	private $stitch_off;
+	private $video_cover_timestamp_ms;
+	private $bytes;
+	private $mime;
+	private $upload_url;
+	private $is_brand_content;
+	private $is_brand_organic;
 	public function __construct(string $file, string $title, string $privacy_level = Connector::PRIVACY_PRIVATE, bool $comments_off = false, bool $duet_off = false, bool $stitch_off = false, int $video_cover_timestamp_ms = 1000, bool $is_brand_content = false, bool $is_brand_organic = false) {
 		if (!file_exists($file)) {
 			throw new Exception('TikTok file to be uploaded doesn\'t exist: '.$file);

@@ -15,14 +15,14 @@ use Exception;
 use gimucco\TikTokLoginKit\Connector;
 
 class CreatorQuery {
-	private string $avatar_url;
-	private string $nickname;
-	private string $username;
-	private bool $duet_off;
-	private bool $stitch_off;
-	private bool $comment_off;
-	private int $max_video_duration_sec;
-	private array $privacy_options;
+	private $avatar_url;
+	private $nickname;
+	private $username;
+	private $duet_off;
+	private $stitch_off;
+	private $comment_off;
+	private $max_video_duration_sec;
+	private $privacy_options;
 
 	public function __construct(string $avatar_url, string $nickname, string $username, bool $duet_off, bool $stitch_off, bool $comment_off, int $max_video_duration_sec, array $privacy_options) {
 		$this->avatar_url = $avatar_url;

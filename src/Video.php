@@ -12,21 +12,21 @@
 namespace gimucco\TikTokLoginKit;
 
 class Video {
-	private string $id;
-	private string $share_url;
-	private int $create_time;
-	private string $cover_image_url;
-	private string $video_description;
-	private int $duration;
-	private int $height;
-	private int $width;
-	private string $title;
-	private string $embed_html;
-	private string $embed_link;
-	private int $like_count;
-	private int $comment_count;
-	private int $share_count;
-	private int $view_count;
+	private $id;
+	private $share_url;
+	private $create_time;
+	private $cover_image_url;
+	private $video_description;
+	private $duration;
+	private $height;
+	private $width;
+	private $title;
+	private $embed_html;
+	private $embed_link;
+	private $like_count;
+	private $comment_count;
+	private $share_count;
+	private $view_count;
 
 	/**
 	 * Main constructor

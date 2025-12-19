@@ -16,15 +16,15 @@ use gimucco\TikTokLoginKit\Connector;
 use gimucco\TikTokLoginKit\response\PublishInfo;
 
 class VideoFromUrl {
-	private string $url;
-	private string $title;
-	private string $privacy_level;
-	private bool $comments_off;
-	private bool $duet_off;
-	private bool $stitch_off;
-	private int $video_cover_timestamp_ms;
-	private bool $is_brand_content;
-	private bool $is_brand_organic;
+	private $url;
+	private $title;
+	private $privacy_level;
+	private $comments_off;
+	private $duet_off;
+	private $stitch_off;
+	private $video_cover_timestamp_ms;
+	private $is_brand_content;
+	private $is_brand_organic;
 	public function __construct(string $url, string $title, string $privacy_level = Connector::PRIVACY_PRIVATE, bool $comments_off = false, bool $duet_off = false, bool $stitch_off = false, int $video_cover_timestamp_ms = 1000, bool $is_brand_content = false, bool $is_brand_organic = false) {
 		if (!Connector::isValidPrivacyLevel($privacy_level)) {
 			throw new Exception('TikTok Invalid Privacy Level Provided: '.$privacy_level.". Must be: ".implode(', ', Connector::VALID_PRIVACY));
